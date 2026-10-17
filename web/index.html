@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service Queue</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Customer Service System</h1>
+            <p class="author-tag">Hafiz Abdullah Shakeel | Fakhir Ashar Chaudry | Abdurehman</p>
+        </header>
+
+        <main>
+            <!-- The Queue visualizer -->
+            <div class="queue-wrapper" id="queue-container">
+                <!-- Javascript will inject the slots here -->
+            </div>
+
+            <!-- Status text -->
+            <div class="status-panel">
+                <p id="status-text">Queue is NEITHER full nor empty.</p>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <div class="input-group">
+                    <input type="text" id="customer-name" placeholder="Enter customer name..." autocomplete="off">
+                </div>
+                <div class="button-group">
+                    <!-- Ensure the IDs here match what your script.js expects -->
+                    <button id="enqueue-btn" class="btn primary-btn">Enqueue</button>
+                    <button id="dequeue-btn" class="btn secondary-btn">Dequeue</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
